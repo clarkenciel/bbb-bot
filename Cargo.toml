@@ -1,0 +1,19 @@
+[package]
+name = "bbb_bot"
+version = "0.1.0"
+authors = ["danny clarke <clarkenciel@gmail.com>"]
+
+[dependencies]
+bbb_core = { git = "https://github.com/clarkenciel/bbb-core", tag = "1.0.0" }
+futures = "0.1"
+hyper = "0.11.0"
+nom = "^3.2"
+rand = "0.3"
+regex = "0.2"
+serde = "1.0.17"
+serde_derive = "1.0.17"
+serde_json = "1.0"
+tokio-core = "0.1"
+
+[target.heroku]
+version = "1.21.0"
